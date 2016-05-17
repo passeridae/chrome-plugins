@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Farmer to Farmer",
+	"version": "1.0",
+	"description": "Replaces the text 'Farmer John' with 'John Peters, you know, the farmer'.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
