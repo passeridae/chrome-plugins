@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Substitutions 3",
+	"version": "0.1",
+	"description": "'Improves' news articles, as per xkcd 1679.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
